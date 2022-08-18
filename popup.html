@@ -1,7 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <body>
-        <h1>Happy Birthday!</h1>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <div class="app-box">
+        <div class="app-inner">
+            <div class="title">
+                <h1>Happy Birthday!</h1>
+            </div>
+
+            <div class="timer-wrap">
+                <div id="timer">
+                    <div class="circle"></div>
+                </div>
+                <div class="time">
+                    <span>Month?</span><input type="text" maxlength="4" id="month">
+                    <span>Day?</span><input type="text" maxlength="4" id="day">
+                </div>
+            </div>
+            <div class="action">
+                <div class="action-item">
+                    <a href="#" id="set" class="btn green">Set date</a>
+                </div>
+                <div class="action-item">
+                    <a href="#" id="cancel" class="btn not-active">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="birthdate.js"></script>
+
+</body>
+
 </html>
